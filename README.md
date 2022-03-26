@@ -1,11 +1,11 @@
 # BeatDancer
 A game about a kitten
 ## Developers 
-- Harumi Manzano 
+- [@HarumiManz](https://github.com/HarumiManz)
 - Isabel Vieyra
 - Marco Barbosa
 - German Guzman
-- Sebastian Mora
+- [@Bastian1110](https://github.com/Bastian1110)
 ## Ready 
 _Nothing_
 ## In-Process
