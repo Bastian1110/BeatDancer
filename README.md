@@ -5,7 +5,7 @@ A game about a kitten
 - Isabel Vieyra
 - Marco Barbosa
 - German Guzman
-- Sebastian Mora
+- [@Bastian1110](https://github.com/Bastian1110)
 ## Ready 
 _Nothing_
 ## In-Process
