@@ -2,9 +2,9 @@
 A game about a kitten
 ## Developers 
 - [@HarumiManz](https://github.com/HarumiManz)
-- Isabel Vieyra
+- [@Isabelinna](GermanGuzmanLopez)
 - [@Marco Barbosa](https://github.com/A01746163)
-- German Guzman
+- [@GermanGuzmanLopez](https://github.com/GermanGuzmanLopez)
 - [@Bastian1110](https://github.com/Bastian1110)
 ## Ready 
 _Nothing_
