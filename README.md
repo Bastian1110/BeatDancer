@@ -1,4 +1,4 @@
-# BeatDancer
+<img src="https://github.com/Bastian1110/BeatDancer/blob/main/Assets/ExternalImages/Logo.png"/>
 A game about a kitten
 ## Developers 
 - [@HarumiManz](https://github.com/HarumiManz)
