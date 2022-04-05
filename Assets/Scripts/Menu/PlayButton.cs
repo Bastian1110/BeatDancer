@@ -8,5 +8,6 @@ public class PlayButton : MonoBehaviour
     public void Play()
     {
         SceneManager.LoadScene("LevelTest");
+        print("Boton Play Presionado!!!");
     }
 }
