@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//Script to move the player
+//By Sebastian Mora
 public class MuevePersonaje : MonoBehaviour
 {
     //Velocidades
@@ -20,12 +21,12 @@ public class MuevePersonaje : MonoBehaviour
     {
         //Caminar
         float movHorizontal = Input.GetAxis("Horizontal");
-        rb.velocity = new Vector2(movHorizontal*velocidadX, rb.velocity.y);
+        rb.velocity = new Vector2(movHorizontal * velocidadX, rb.velocity.y);
 
         float movVertical = Input.GetAxis("Vertical");
         if (movVertical > 0)
         {
-            rb.velocity = new Vector2(rb.velocity.x, movVertical * velocidadY);
+            rb.AddForce(new Vector2(0, 0.5f), ForceMode2D.Impulse);
         }
     }
 }
