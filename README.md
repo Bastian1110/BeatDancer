@@ -1,4 +1,4 @@
-<img src="https://github.com/Bastian1110/BeatDancer/blob/main/Assets/ExternalImages/Logo.png"/>
+<img src="https://github.com/Bastian1110/BeatDancer/blob/main/Assets/ExternalImages/Logos/Logo.png"/>
 
 A game about a kitten
 ## Developers 
@@ -11,5 +11,12 @@ A game about a kitten
 _Nothing_
 ## In-Process
 - Main Menu
+- Test level
+- Game Mechanics
 ## To-Do
 _All_
+## Credits
+
+We use some Unity Store Assets so... check it out!
+
+[2D Side Scroller](https://assetstore.unity.com/packages/2d/environments/2d-sidescroller-pixel-art-kit-201686) by PolyMeshWorld
