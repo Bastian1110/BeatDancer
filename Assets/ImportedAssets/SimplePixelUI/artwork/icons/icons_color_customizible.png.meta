@@ -966,7 +966,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      isonswhite2_17: -3651824946001971164
+      isonswhite2_20: 2773992808477904761
       isonswhite2_21: 2238386083235014152
       isonswhite2_26: -4598059474086584248
       isonswhite2_18: -5743856943257200401
@@ -1000,7 +1000,7 @@ TextureImporter:
       isonswhite2_23: -7440971185202368722
       isonswhite2_22: -5305403707639393297
       isonswhite2_27: 650022395868303075
-      isonswhite2_20: 2773992808477904761
+      isonswhite2_17: -3651824946001971164
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
