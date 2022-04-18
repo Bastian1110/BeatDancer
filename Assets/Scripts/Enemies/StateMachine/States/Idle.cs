@@ -24,10 +24,17 @@ public class Idle : State
     public override void UpdateLogic()
     {
         base.UpdateLogic();
+
         waitCounter += Time.deltaTime;
         if(waitCounter > waitTime)
         {
             stateMachine.ChangeState(sm.walkState);
+        }
+
+        float playerDistance = Vector2.Distance(sm.player.position, sm.transform.position);
+        if (playerDistance < sm.viewRange)
+        {
+            stateMachine.ChangeState(sm.attackState);
         }
     }
 

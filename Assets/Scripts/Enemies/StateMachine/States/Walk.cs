@@ -23,12 +23,20 @@ public class Walk : State
     public override void UpdateLogic()
     {
         base.UpdateLogic();
+
         RaycastHit2D groundInfo = Physics2D.Raycast(sm.groundDetector.position, Vector2.down, groundRayDistance);
         RaycastHit2D wallInfo = Physics2D.Raycast(sm.wallDetector.position, sm.transform.right, wallRayDistance);
         if(!groundInfo.collider || wallInfo.collider)
         {
             stateMachine.ChangeState(sm.idleState);
         }
+
+        float playerDistance = Vector2.Distance(sm.player.position,sm.transform.position);
+        if(playerDistance < sm.viewRange)
+        {
+            stateMachine.ChangeState(sm.attackState);
+        }
+
     }
 
     public override void UpdatePhysics()
