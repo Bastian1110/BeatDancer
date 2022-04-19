@@ -6,9 +6,8 @@ public class Attack : State
 {
     private SkeletonMachine sm;
 
-    private float shootingTime;
-    public float fireRate = 2000f; 
-    public float shootingPower = 20f; 
+    private float fireRate = 1f;
+    private float nextFire = 0.0f;
 
     public Attack(SkeletonMachine stateMachine) : base("Attack", stateMachine)
     {
@@ -19,13 +18,18 @@ public class Attack : State
     {
         base.Enter();
         sm.animator.SetBool("playerDetect", true);
+        float direction = sm.target.position.x - sm.transform.position.x;
+        if(direction < 0)
+        {
+            sm.transform.eulerAngles = new Vector3(0, -180, 0);
+        }
     }
 
     public override void UpdateLogic()
     {
         base.UpdateLogic();
 
-        float playerDistance = Vector2.Distance(sm.player.position, sm.transform.position);
+        float playerDistance = Vector2.Distance(sm.target.position, sm.transform.position);
         if (playerDistance > sm.viewRange)
         {
             stateMachine.ChangeState(sm.walkState);
@@ -46,14 +50,10 @@ public class Attack : State
 
     private void Fire()
     {
-        if(Time.time > shootingTime)
+        if(Time.time > nextFire)
         {
-            shootingTime = Time.time + fireRate / 1000;
-            GameObject newProjectile = Object.Instantiate(sm.projectile);
-            newProjectile.transform.position = sm.transform.position;
-            newProjectile.GetComponent<Rigidbody2D>().velocity = new Vector2(-5, 0);
-            newProjectile.SetActive(true);
+            nextFire = Time.time + fireRate;
+            Object.Instantiate(sm.projectile, sm.transform.position, Quaternion.identity);
         }
-        
     }
 }

@@ -6,7 +6,7 @@ public class Idle : State
 {
     private SkeletonMachine sm;
 
-    private float waitTime = 3f;
+    private float waitTime;
     private float waitCounter;
 
     public Idle(SkeletonMachine stateMachine) : base("Idle", stateMachine)
@@ -18,6 +18,14 @@ public class Idle : State
     {
         base.Enter();
         waitCounter = 0f;
+        if (!sm.wait)
+        {
+            waitTime = 0f;
+        }
+        else
+        {
+            waitTime = 3f;
+        }
         sm.animator.SetBool("isWalking",false);
     }
 
@@ -31,7 +39,7 @@ public class Idle : State
             stateMachine.ChangeState(sm.walkState);
         }
 
-        float playerDistance = Vector2.Distance(sm.player.position, sm.transform.position);
+        float playerDistance = Vector2.Distance(sm.target.position, sm.transform.position);
         if (playerDistance < sm.viewRange)
         {
             stateMachine.ChangeState(sm.attackState);
@@ -41,15 +49,19 @@ public class Idle : State
     public override void Exit()
     {
         base.Exit();
-        if (sm.moveRight)
+        if (sm.wait)
         {
-            sm.transform.eulerAngles = new Vector3(0, -180, 0);
-            sm.moveRight = false;
-        }
-        else
-        {
-            sm.transform.eulerAngles = new Vector3(0, 0, 0);
-            sm.moveRight = true;
+            if (sm.moveRight)
+            {
+                sm.transform.eulerAngles = new Vector3(0, -180, 0);
+                sm.moveRight = false;
+            }
+            else
+            {
+                sm.transform.eulerAngles = new Vector3(0, 0, 0);
+                sm.moveRight = true;
+            }
+
         }
     }
 }
