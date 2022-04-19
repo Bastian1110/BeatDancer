@@ -12,11 +12,13 @@ public class MovePlayer : MonoBehaviour
     //RigidBody
     Rigidbody2D rb;
     SpriteRenderer render;
+    Animator anim;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         render = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
     }
 
     private void Update()
@@ -34,5 +36,14 @@ public class MovePlayer : MonoBehaviour
                 rb.AddForce(new Vector2(0, jump), ForceMode2D.Impulse);
             }
         }
+
+        //Animation
+        float velocity = Mathf.Abs(rb.velocity.x);
+        anim.SetBool("isMoving", velocity > 0.1);
+
+        //Direction
+        render.flipX = rb.velocity.x < 0;
+
+
     }
 }
