@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PlayButton : MonoBehaviour
+public class Home : MonoBehaviour
 {
     public void Play()
     {
-        SceneManager.LoadScene("LevelTest");
-        print("Boton Play Presionado!!!");
+        SceneManager.LoadScene("Menu");
+        //print("Boton Play Presionado!!!");
     }
 }
