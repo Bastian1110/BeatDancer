@@ -749,7 +749,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 496248925}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 998739719}
+        m_TargetAssemblyTypeName: LevelButtons, Assembly-CSharp
+        m_MethodName: play1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &496248925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1310,7 +1322,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 998739714}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd9e49adb5a07e64fa08365b5fcc40a8, type: 3}
+  m_Script: {fileID: 11500000, guid: fbdc297a733aa3546bad5af6f4920aa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1082023668
@@ -2105,8 +2117,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 998739719}
-        m_TargetAssemblyTypeName: home, Assembly-CSharp
-        m_MethodName: Play
+        m_TargetAssemblyTypeName: LevelButtons, Assembly-CSharp
+        m_MethodName: casa
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

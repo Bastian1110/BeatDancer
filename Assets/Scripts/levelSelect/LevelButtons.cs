@@ -3,11 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class home : MonoBehaviour
+public class LevelButtons : MonoBehaviour
 {
-    public void Play()
+    public void casa()
     {
         SceneManager.LoadScene("Menu");
+        //print("Boton Play Presionado!!!");
+    }
+
+    public void play1()
+    {
+        SceneManager.LoadScene("LevelTest");
         //print("Boton Play Presionado!!!");
     }
 }
