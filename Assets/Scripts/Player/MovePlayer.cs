@@ -14,6 +14,7 @@ public class MovePlayer : MonoBehaviour
     SpriteRenderer render;
     Animator anim;
 
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -36,6 +37,7 @@ public class MovePlayer : MonoBehaviour
                 rb.AddForce(new Vector2(0, jump), ForceMode2D.Impulse);
             }
         }
+        anim.SetBool("isJumping", !FloorTrigger.grounded);
 
         //Animation
         float velocity = Mathf.Abs(rb.velocity.x);
@@ -43,6 +45,7 @@ public class MovePlayer : MonoBehaviour
 
         //Direction
         render.flipX = rb.velocity.x < 0;
+
 
 
     }

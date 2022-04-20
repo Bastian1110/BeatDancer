@@ -10,11 +10,9 @@ public class FloorTrigger : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         grounded = true;
-        print("Esta en el piso");
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         grounded = false;
-        print("Esta en el aire");
     }
 }
