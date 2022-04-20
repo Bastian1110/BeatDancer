@@ -7,7 +7,7 @@ public class Buttons : MonoBehaviour
 {
     public void Play()
     {
-        SceneManager.LoadScene("LevelTest");
+        SceneManager.LoadScene("SeleccionMundo");
         //print("Boton Play Presionado!!!");
     }
 
