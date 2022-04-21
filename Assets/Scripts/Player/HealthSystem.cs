@@ -11,9 +11,28 @@ public class HealthSystem : MonoBehaviour
     public float health = 1;
     public static HealthSystem instance;
 
+    Animator anim;
+
     private void Awake()
     {
         instance = this;
+        anim = GetComponent<Animator>();
     }
 
+    public void DamageAnimation()
+    {
+        StartCoroutine(DamageAnimationHandler());
+    }
+
+    IEnumerator DamageAnimationHandler()
+    {
+        anim.SetBool("isDamage", true);
+        yield return new WaitForSeconds(0.5f);
+        anim.SetBool("isDamage", false);
+    }
+
+    public void KatsbyDeath()
+    {
+        Destroy(gameObject, 0.5f);
+    }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 //Script to handlde projectile behaviour
 //By Sebastian Mora
-public class Projectile : MonoBehaviour
+public class DirectedProjectile : MonoBehaviour
 {
     public float speed;
 
@@ -29,5 +29,19 @@ public class Projectile : MonoBehaviour
     void DestroyProjectile()
     {
         Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            HealthSystem.instance.health -= 0.16f;
+            HealthSystem.instance.DamageAnimation();
+            HUDSystem.instance.UpdateHealth();
+            if(HealthSystem.instance.health < 0)
+            {
+                HealthSystem.instance.KatsbyDeath();
+            }
+        }
     }
 }
