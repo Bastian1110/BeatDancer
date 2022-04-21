@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Home : MonoBehaviour
 {
-    public void Play()
+    public void Casa()
     {
         SceneManager.LoadScene("Menu");
         //print("Boton Play Presionado!!!");
