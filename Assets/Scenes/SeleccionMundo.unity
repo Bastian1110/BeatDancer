@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'You are a brave kitty, but.. i don''t know if that''s enough. '
+  m_text: You are brave , but.. Something feels odd.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 77d0e86031d0247d38890eeecde96f7b, type: 2}
   m_sharedMaterial: {fileID: 5616162050556781794, guid: 77d0e86031d0247d38890eeecde96f7b, type: 2}
@@ -667,7 +667,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6c593b133ceeaf64a84a7b7415f78273, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8f9c9d8e9da3f4785a046eaafd5607b0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -885,7 +885,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4b8fa9df709f1b9408e2afae525602ec, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 57b2810ac187d4046934af46d9afeff0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1495,8 +1495,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Well.. you never give up, but let me give you a tip 'sleep well and have
-    sweet dreams'
+  m_text: Well.. you never give up, getting this far must feel like... a dream perhaps?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 77d0e86031d0247d38890eeecde96f7b, type: 2}
   m_sharedMaterial: {fileID: 5616162050556781794, guid: 77d0e86031d0247d38890eeecde96f7b, type: 2}
@@ -1977,7 +1976,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Now you are with stranger creatures.
+  m_text: 'Now you are with strange creatures.
 
     Be careful little Kitten..'
   m_isRightToLeft: 0
@@ -2355,7 +2354,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f4565084980c1ef4e8f197ab705844b1, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 70300571382304bc09dfb1dbbba6b133, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -2651,7 +2650,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5a35466a29e5ce64f98945ed151af09b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fb0e070eb434944c5a2cc5c6e7b4885a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
