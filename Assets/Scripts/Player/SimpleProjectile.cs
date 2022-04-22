@@ -4,22 +4,26 @@ using UnityEngine;
 
 public class SimpleProjectile : MonoBehaviour
 {
-    private Rigidbody2D rb;
-    public float velocidadX = 5;
-
-    private SpriteRenderer renndererProyectil;
+    public float speed;
+    public float range;
+    private Transform player;
+    private Vector2 target;
 
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        rb.velocity = new Vector2(velocidadX, 0);
-        renndererProyectil = GetComponent<SpriteRenderer>();
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        target = new Vector2(player.position.x+range, player.position.y);
     }
 
     // Update is called once per frame
     void Update()
     {
+        transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
+        if (transform.position.x == target.x && transform.position.y == target.y)
+        {
+            Destroy(gameObject);
+        }
     }
 
 }

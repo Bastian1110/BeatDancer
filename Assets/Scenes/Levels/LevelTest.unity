@@ -356,7 +356,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 5290319092773045993, guid: 0ba9553a24a8d4f33b427ec7edbddd44, type: 3}
-  projectileSpeed: 5
 --- !u!1 &368502720
 GameObject:
   m_ObjectHideFlags: 0
@@ -4625,7 +4624,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1714297588
 Animator:
   serializedVersion: 4

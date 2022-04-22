@@ -6,35 +6,29 @@ public class PlayerAttack : MonoBehaviour
 {
     public GameObject projectile;
 
-    private float fireRate = 0.2f;
+    private float fireRate = 0.5f;
     private float nextFire = 0.0f;
-
-    public float projectileSpeed = 5;
-
-    private Transform trans;
 
     void Start()
     {
-        trans = GetComponent<Transform>();
+        return;
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Z))
         {
-            if (Time.time > nextFire)
-            {
-                nextFire = Time.time + fireRate;
-                Fire();
-            }
+            Fire();
         }
     }
 
     void Fire()
     {
-        GameObject newProjectile = Instantiate(projectile);
-        newProjectile.transform.position = gameObject.transform.position;
-        newProjectile.SetActive(true);
+        if (Time.time > nextFire)
+        {
+            nextFire = Time.time + fireRate;
+            Object.Instantiate(projectile, transform.position, Quaternion.identity);
+        }
 
     }
 }
