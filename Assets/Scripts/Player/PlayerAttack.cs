@@ -32,7 +32,9 @@ public class PlayerAttack : MonoBehaviour
 
     void Fire()
     {
-        Instantiate(projectile);
+        GameObject newProjectile = Instantiate(projectile);
+        newProjectile.transform.position = gameObject.transform.position;
+        newProjectile.SetActive(true);
 
     }
 }

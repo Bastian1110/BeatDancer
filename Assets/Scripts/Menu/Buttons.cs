@@ -8,12 +8,15 @@ public class Buttons : MonoBehaviour
     public void Play()
     {
         SceneManager.LoadScene("SeleccionMundo");
-        //print("Boton Play Presionado!!!");
     }
 
     public void Settings()
     {
         SceneManager.LoadScene("Settings");
-        //print("Boton Play Presionado!!!");
+    }
+
+    public void Login()
+    {
+        SceneManager.LoadScene("Login");
     }
 }
