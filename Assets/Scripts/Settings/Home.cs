@@ -9,4 +9,8 @@ public class Home : MonoBehaviour
     {
         SceneManager.LoadScene("Menu");
     }
+     public void intruction()
+    {
+        SceneManager.LoadScene("Instructions");
+    }
 }
