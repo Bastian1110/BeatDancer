@@ -24,7 +24,7 @@ public class Idle : State
         }
         else
         {
-            waitTime = 3f;
+            waitTime = 1f;
         }
         sm.animator.SetBool("isWalking",false);
     }

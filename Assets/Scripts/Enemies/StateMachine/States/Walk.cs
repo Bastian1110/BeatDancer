@@ -38,7 +38,6 @@ public class Walk : State
             sm.wait = false;
             stateMachine.ChangeState(sm.attackState);
         }
-
     }
 
     public override void UpdatePhysics()

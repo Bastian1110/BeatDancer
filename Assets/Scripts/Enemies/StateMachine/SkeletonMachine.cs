@@ -9,6 +9,8 @@ public class SkeletonMachine : StateMachine
     public Idle idleState;
     public Walk walkState;
     public Attack attackState;
+    public Damaged damagedState;
+    public Dead deadState;
 
     public Transform groundDetector;
     public Transform wallDetector;
@@ -23,11 +25,15 @@ public class SkeletonMachine : StateMachine
 
     public GameObject projectile;
 
+    public float health = 1f;
+
     private void Awake()
     {
         idleState = new Idle(this);
         walkState = new Walk(this);
         attackState = new Attack(this);
+        damagedState = new Damaged(this);
+        deadState = new Dead(this);
 
         animator = GetComponent<Animator>();
         target = GameObject.FindGameObjectWithTag("Player").transform;
@@ -37,4 +43,29 @@ public class SkeletonMachine : StateMachine
     {
         return idleState;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("PlayerAttack"))
+        {
+            print("Esqueletoooo dañado");
+            health -= 0.16f;
+            ChangeState(damagedState);
+        }
+    }
+
+    public void StartDamagedAnimation()
+    {
+        StartCoroutine(DamagedAnimationHandler());
+    }
+
+
+    IEnumerator DamagedAnimationHandler()
+    {
+        animator.SetBool("isHurt", true);
+        yield return new WaitForSeconds(0.4f);
+        animator.SetBool("isHurt", false);
+    }
+
+
 }
