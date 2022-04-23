@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4769822134202546116}
   - component: {fileID: 4769822134202546117}
   m_Layer: 0
-  m_Name: P_FlagTop
+  m_Name: WinFlag
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

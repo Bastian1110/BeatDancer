@@ -23,9 +23,11 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-    public void Settings()
+    public void Test()
     {
-        SceneManager.LoadScene("Settings");
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene(currentSceneName);
+        Time.timeScale = 1;
     }
 
     public void Exit()

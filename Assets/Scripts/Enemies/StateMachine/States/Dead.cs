@@ -14,7 +14,7 @@ public class Dead : State
     public override void Enter()
     {
         base.Enter();
-
+        sm.DestroySkeleton();
     }
 
     public override void UpdatePhysics()

@@ -48,7 +48,6 @@ public class SkeletonMachine : StateMachine
     {
         if (collision.gameObject.CompareTag("PlayerAttack"))
         {
-            print("Esqueletoooo dañado");
             health -= 0.16f;
             ChangeState(damagedState);
         }
@@ -59,12 +58,22 @@ public class SkeletonMachine : StateMachine
         StartCoroutine(DamagedAnimationHandler());
     }
 
-
     IEnumerator DamagedAnimationHandler()
     {
         animator.SetBool("isHurt", true);
         yield return new WaitForSeconds(0.4f);
         animator.SetBool("isHurt", false);
+    }
+
+    public void DestroySkeleton()
+    {
+        StartCoroutine(DestroySkeletonHelper());
+    }
+
+    IEnumerator DestroySkeletonHelper()
+    {
+        yield return new WaitForSeconds(2.5f);
+        Destroy(gameObject);
     }
 
 
