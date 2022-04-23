@@ -181,12 +181,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Katsby the cat must destroy the skeletons during the level. During the
-    level, fish and milk containers will appear to help you along the way, and you
-    will also have mice that will accompany you during the trip.
+  m_text: 'Katsby must destroy the skeletons throughout the level. Along the way
+    fish and milk bottles will appear to help you regain health, plus you will also
+    be followed around by mice that will keep you company  during the trip.
 
-    Each time you
-    finish a level you will be awarded a percussion instrument with a brief description.'
+    Each
+    time you finish a level you will be awarded with a percussion instrument with
+    a brief description. It''s always fun to learn while you''re asleep isn''t it?'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 77d0e86031d0247d38890eeecde96f7b, type: 2}
   m_sharedMaterial: {fileID: 5616162050556781794, guid: 77d0e86031d0247d38890eeecde96f7b, type: 2}
