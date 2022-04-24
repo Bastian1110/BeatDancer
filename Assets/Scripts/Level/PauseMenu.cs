@@ -23,7 +23,7 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-    public void Test()
+    public void Reset()
     {
         string currentSceneName = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene(currentSceneName);
@@ -33,6 +33,7 @@ public class PauseMenu : MonoBehaviour
     public void Exit()
     {
         SceneManager.LoadScene("Menu");
+        Time.timeScale = 1;
     }
 
 }
