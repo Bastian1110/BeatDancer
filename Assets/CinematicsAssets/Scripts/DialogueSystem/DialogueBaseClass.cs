@@ -9,7 +9,7 @@ namespace DialogueSystem
     {
         public bool finished { get; private set; }
 
-        //Aqui esta la magia, se recorre el input y se coloca caracter por caracter en el espacio del tex
+        //Aqui esta la magia, se recorre el input y se coloca caracter por caracter en el espacio del texto
         //De igual manera se colocan las propiedades en el objeto
         protected IEnumerator WriteText(string input, Text textHolder, Color textColor, Font textFont, float delay, AudioClip sound, float delayBetweenLines)
         {
