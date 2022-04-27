@@ -399,7 +399,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: fish that generates points
+  m_text: How many fish can you collect?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 77d0e86031d0247d38890eeecde96f7b, type: 2}
   m_sharedMaterial: {fileID: 5616162050556781794, guid: 77d0e86031d0247d38890eeecde96f7b, type: 2}
@@ -601,7 +601,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: inflict damage on katsby
+  m_text: When damaged
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 77d0e86031d0247d38890eeecde96f7b, type: 2}
   m_sharedMaterial: {fileID: 5616162050556781794, guid: 77d0e86031d0247d38890eeecde96f7b, type: 2}
@@ -813,7 +813,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: katsby life bar
+  m_text: Health points (be careful not to empty this bar)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 77d0e86031d0247d38890eeecde96f7b, type: 2}
   m_sharedMaterial: {fileID: 5616162050556781794, guid: 77d0e86031d0247d38890eeecde96f7b, type: 2}
@@ -948,7 +948,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: katsby walked
+  m_text: Walking
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 77d0e86031d0247d38890eeecde96f7b, type: 2}
   m_sharedMaterial: {fileID: 5616162050556781794, guid: 77d0e86031d0247d38890eeecde96f7b, type: 2}
@@ -1840,7 +1840,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: milk that regenerates life
+  m_text: Delicious milk to restore some HP points
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 77d0e86031d0247d38890eeecde96f7b, type: 2}
   m_sharedMaterial: {fileID: 5616162050556781794, guid: 77d0e86031d0247d38890eeecde96f7b, type: 2}
@@ -1975,9 +1975,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Katsby attack
-
-'
+  m_text: Attack
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 77d0e86031d0247d38890eeecde96f7b, type: 2}
   m_sharedMaterial: {fileID: 5616162050556781794, guid: 77d0e86031d0247d38890eeecde96f7b, type: 2}
@@ -2189,7 +2187,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Katsby jump
+  m_text: Jumping
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 77d0e86031d0247d38890eeecde96f7b, type: 2}
   m_sharedMaterial: {fileID: 5616162050556781794, guid: 77d0e86031d0247d38890eeecde96f7b, type: 2}
@@ -2401,7 +2399,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Katsby whistles when he is still
+  m_text: Music never stops, even while standing still
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 77d0e86031d0247d38890eeecde96f7b, type: 2}
   m_sharedMaterial: {fileID: 5616162050556781794, guid: 77d0e86031d0247d38890eeecde96f7b, type: 2}
@@ -2876,7 +2874,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: enemy skeleton
+  m_text: Spooky skeleton
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 77d0e86031d0247d38890eeecde96f7b, type: 2}
   m_sharedMaterial: {fileID: 5616162050556781794, guid: 77d0e86031d0247d38890eeecde96f7b, type: 2}
@@ -3011,7 +3009,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Percussion instruments when you pass the level
+  m_text: Unlockable instruments to expand your musical knowledge
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 77d0e86031d0247d38890eeecde96f7b, type: 2}
   m_sharedMaterial: {fileID: 5616162050556781794, guid: 77d0e86031d0247d38890eeecde96f7b, type: 2}
