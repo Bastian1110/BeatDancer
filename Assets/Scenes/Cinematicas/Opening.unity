@@ -257,7 +257,7 @@ MonoBehaviour:
   delay: 0.1
   delayBetweenLines: 2
   sound: {fileID: 8300000, guid: aa6186af7528954468604e119db65597, type: 3}
-  characterSprite: {fileID: 21300000, guid: 57feaff74c38e4da69bfcd01d081b6b0, type: 3}
+  characterSprite: {fileID: 21300000, guid: 35a0c33504e104bc3a06cab269adcd1d, type: 3}
   imageHolder: {fileID: 175211262}
 --- !u!114 &84896768
 MonoBehaviour:
@@ -538,7 +538,7 @@ MonoBehaviour:
   delay: 0.1
   delayBetweenLines: 2
   sound: {fileID: 8300000, guid: aa6186af7528954468604e119db65597, type: 3}
-  characterSprite: {fileID: 21300000, guid: 57feaff74c38e4da69bfcd01d081b6b0, type: 3}
+  characterSprite: {fileID: 21300000, guid: 35a0c33504e104bc3a06cab269adcd1d, type: 3}
   imageHolder: {fileID: 821181002}
 --- !u!114 &719862871
 MonoBehaviour:
@@ -1017,7 +1017,7 @@ MonoBehaviour:
   delay: 0.1
   delayBetweenLines: 2
   sound: {fileID: 8300000, guid: aa6186af7528954468604e119db65597, type: 3}
-  characterSprite: {fileID: 21300000, guid: 57feaff74c38e4da69bfcd01d081b6b0, type: 3}
+  characterSprite: {fileID: 21300000, guid: 35a0c33504e104bc3a06cab269adcd1d, type: 3}
   imageHolder: {fileID: 1068012775}
 --- !u!114 &1164792938
 MonoBehaviour:
@@ -1337,7 +1337,7 @@ MonoBehaviour:
   delay: 0.1
   delayBetweenLines: 2
   sound: {fileID: 8300000, guid: aa6186af7528954468604e119db65597, type: 3}
-  characterSprite: {fileID: 21300000, guid: 57feaff74c38e4da69bfcd01d081b6b0, type: 3}
+  characterSprite: {fileID: 21300000, guid: 35a0c33504e104bc3a06cab269adcd1d, type: 3}
   imageHolder: {fileID: 1895533575}
 --- !u!1 &1895533573
 GameObject:

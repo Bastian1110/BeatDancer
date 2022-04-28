@@ -788,7 +788,7 @@ MonoBehaviour:
   delay: 0.1
   delayBetweenLines: 2
   sound: {fileID: 8300000, guid: aa6186af7528954468604e119db65597, type: 3}
-  characterSprite: {fileID: 0}
+  characterSprite: {fileID: 1442071728, guid: 56d4ef86b57994d6da1b886309704527, type: 3}
   imageHolder: {fileID: 23615339}
 --- !u!114 &1494243356
 MonoBehaviour:
