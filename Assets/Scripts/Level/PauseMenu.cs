@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pausePanel;
+    public GameObject gameOverPanel;
     public bool inPause = false;
 
     public void Pause()
@@ -20,6 +21,11 @@ public class PauseMenu : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Pause();
+        }
+        if (HealthSystem.instance.health < 0.1)
+        {
+            gameOverPanel.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 

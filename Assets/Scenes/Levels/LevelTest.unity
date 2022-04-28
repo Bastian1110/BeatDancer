@@ -726,6 +726,7 @@ GameObject:
   - component: {fileID: 353009652}
   - component: {fileID: 353009653}
   - component: {fileID: 353009654}
+  - component: {fileID: 353009655}
   m_Layer: 0
   m_Name: Katsby
   m_TagString: Player
@@ -910,8 +911,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7408f3e8d8b9f49c1a6c4ca6d001653d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 5290319092773045993, guid: 0ba9553a24a8d4f33b427ec7edbddd44, type: 3}
+  projectile: {fileID: 1886188899593332319, guid: e44eaf60581984730997da7616654227, type: 3}
   rightFire: 1
+--- !u!114 &353009655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353009644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4693e8fa6348d4b88b44ab007b6b91b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  render: {fileID: 0}
+  kill: 0
 --- !u!1 &364415345 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4769822134202546122, guid: d2c2ef38042347648b5d818d43abfd0a, type: 3}
@@ -3592,7 +3607,6 @@ GameObject:
   - component: {fileID: 529663074}
   - component: {fileID: 529663073}
   - component: {fileID: 529663077}
-  - component: {fileID: 529663078}
   m_Layer: 5
   m_Name: HUD
   m_TagString: Untagged
@@ -3700,19 +3714,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 433741245}
   fishesText: {fileID: 754808841}
---- !u!114 &529663078
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 529663072}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4693e8fa6348d4b88b44ab007b6b91b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameOverPanel: {fileID: 2055705772}
 --- !u!1 &550053086
 GameObject:
   m_ObjectHideFlags: 0
@@ -5960,9 +5961,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1434043038}
-        m_TargetAssemblyTypeName: GameOver, Assembly-CSharp
-        m_MethodName: Retry
+      - m_Target: {fileID: 1434043032}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: Reset
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6263,6 +6264,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pausePanel: {fileID: 1223891582}
+  gameOverPanel: {fileID: 2055705772}
   inPause: 0
 --- !u!114 &1434043033
 MonoBehaviour:

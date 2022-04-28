@@ -4,15 +4,35 @@ using UnityEngine;
 
 public class DeadHandler : MonoBehaviour
 {
-    public GameObject gameOverPanel;
+    public Renderer render;
+    public bool kill = false;
+
+    private void Start()
+    {
+        render = GetComponent<Renderer>();
+        Wait();
+    }
 
     void Update()
     {
-        if(HealthSystem.instance.health < 0.1)
+        if (kill)
         {
-            gameOverPanel.SetActive(true);
-            Time.timeScale = 0;
+            if (!render.isVisible)
+            {
+                HealthSystem.instance.health = -1;
+            }
+
         }
-        
+    }
+
+    void Wait()
+    {
+        StartCoroutine(HandleWait());
+    }
+
+    IEnumerator HandleWait()
+    {
+        yield return new WaitForSeconds(1f);
+        kill = true;
     }
 }
