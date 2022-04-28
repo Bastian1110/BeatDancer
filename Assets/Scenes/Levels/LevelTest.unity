@@ -727,6 +727,7 @@ GameObject:
   - component: {fileID: 353009653}
   - component: {fileID: 353009654}
   - component: {fileID: 353009655}
+  - component: {fileID: 353009656}
   m_Layer: 0
   m_Name: Katsby
   m_TagString: Player
@@ -829,7 +830,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 353009644}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.88, y: -1.61, z: 0}
+  m_LocalPosition: {x: -7.07, y: -1.61, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -927,6 +928,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   render: {fileID: 0}
   kill: 0
+--- !u!114 &353009656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353009644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cba03324816314a6da01281447560620, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kills: 0
 --- !u!1 &364415345 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4769822134202546122, guid: d2c2ef38042347648b5d818d43abfd0a, type: 3}
