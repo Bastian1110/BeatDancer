@@ -24,9 +24,11 @@ public class Win : MonoBehaviour
     public void UpdateStats()
     {
         int fishes = FishSystem.instance.fishes;
+        int kills = KillSystem.instance.kills;
         DateTime finalTime = DateTime.Now;
         playTimeRough = finalTime - initialTime;
         fishText.text = fishes.ToString();
+        killText.text = kills.ToString();
         timerText.text = "Time : " +  playTimeRough.ToString(@"mm\:ss");
     }
 

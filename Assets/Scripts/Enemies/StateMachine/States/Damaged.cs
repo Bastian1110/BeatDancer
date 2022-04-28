@@ -25,6 +25,7 @@ public class Damaged : State
         }
         else
         {
+            KillSystem.instance.kills += 1;
             sm.animator.SetBool("isDead", true);
             sm.ChangeState(sm.deadState);
         }
