@@ -13,7 +13,7 @@ public class LevelButtons : MonoBehaviour
 
     public void play1()
     {
-        SceneManager.LoadScene("LevelTest");
+        SceneManager.LoadScene("LevelOne");
         //print("Boton Play Presionado!!!");
     }
 
