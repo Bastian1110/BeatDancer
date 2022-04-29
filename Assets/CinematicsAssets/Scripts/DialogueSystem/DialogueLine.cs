@@ -30,7 +30,12 @@ namespace DialogueSystem
         //Ponemos la imagen del personaje que esta hablando
         [Header("Character Image")]
         [SerializeField] private Sprite characterSprite;
-        [SerializeField] private Image imageHolder;
+        [SerializeField] private Image spriteHolder;
+
+        //Ponemos la imagen del personaje que esta hablando
+        [Header("Background Image")]
+        [SerializeField] private Sprite background;
+        [SerializeField] private Image bgHolder;
 
 
         private void Awake()
@@ -38,8 +43,11 @@ namespace DialogueSystem
             textHolder = GetComponent<Text>();
             textHolder.text = "";
 
-            imageHolder.sprite = characterSprite;
-            imageHolder.preserveAspect = true;
+            spriteHolder.sprite = characterSprite;
+            spriteHolder.preserveAspect = true;
+
+            bgHolder.sprite = background;
+            bgHolder.preserveAspect = false;
         }
 
         //Manda la info a la funcion de WriteText
