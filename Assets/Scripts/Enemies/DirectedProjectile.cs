@@ -7,6 +7,8 @@ using UnityEngine;
 public class DirectedProjectile : MonoBehaviour
 {
     public float speed;
+    public AudioSource audio;
+    public AudioSource audiodead;
 
     private Transform player;
     private Vector2 target;
@@ -41,7 +43,9 @@ public class DirectedProjectile : MonoBehaviour
             if(HealthSystem.instance.health < 0)
             {
                 HealthSystem.instance.KatsbyDeath();
+                audiodead.Play();
             }
+        audio.Play();
         }
     }
 }

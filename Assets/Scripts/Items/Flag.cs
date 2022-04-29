@@ -5,6 +5,7 @@ using UnityEngine;
 public class Flag : MonoBehaviour
 {
     public GameObject winPanel;
+    public AudioSource audio;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -13,6 +14,7 @@ public class Flag : MonoBehaviour
             Win.instance.UpdateStats();
             winPanel.SetActive(true);
             Time.timeScale = 0;
+            audio.Play();
         }
     }
 }

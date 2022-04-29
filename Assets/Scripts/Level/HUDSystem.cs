@@ -10,10 +10,9 @@ using UnityEngine.UI;
 public class HUDSystem : MonoBehaviour
 {
     public static HUDSystem instance;
-
     public Image healthBar;
-
     public TextMeshProUGUI fishesText;
+    public AudioSource audio;
 
     private void Awake()
     {
@@ -24,6 +23,7 @@ public class HUDSystem : MonoBehaviour
     {
         float health = HealthSystem.instance.health;
         healthBar.fillAmount = health;
+        audio.Play();
     }
 
     public void UpdateFishes()
