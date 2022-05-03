@@ -34,7 +34,7 @@ public class Win : MonoBehaviour
 
     public void Exit()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("OutroLevel1");
         Time.timeScale = 1;
     }
 }

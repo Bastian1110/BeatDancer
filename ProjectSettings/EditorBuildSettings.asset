@@ -35,4 +35,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/LevelTwo.unity
     guid: 9116df33b10a7bc499a22a68ff506b27
+  - enabled: 1
+    path: Assets/Scenes/Cinematicas/IntroLevel1.unity
+    guid: e07aa79ea8d674c39a5dc7b9479b594a
+  - enabled: 1
+    path: Assets/Scenes/Cinematicas/OutroLevel1.unity
+    guid: 8d382b56b4f884fd5b8cbcbdba4dc2a7
   m_configObjects: {}
