@@ -793,6 +793,7 @@ GameObject:
   - component: {fileID: 852573221}
   - component: {fileID: 852573220}
   - component: {fileID: 852573224}
+  - component: {fileID: 852573225}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -900,6 +901,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33560dae876672e4883e81586dd1dc07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &852573225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852573219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 343307c22d876f043a56a11af8e912c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &881359849
@@ -1660,7 +1673,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1960306634}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 852573225}
+        m_TargetAssemblyTypeName: Stats, Assembly-CSharp
+        m_MethodName: OpenURL
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1960306634
 MonoBehaviour:
   m_ObjectHideFlags: 0
