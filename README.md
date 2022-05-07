@@ -8,13 +8,13 @@ A game about a kitten
 - [@GermanGuzmanLopez](https://github.com/GermanGuzmanLopez)
 - [@Bastian1110](https://github.com/Bastian1110)
 ## Ready 
-_Nothing_
+All
 ## In-Process
 - Main Menu
 - Test level
 - Game Mechanics
 ## To-Do
-_All_
+Nothing
 ## Credits
 
 We use some Unity Store Assets so... check it out!
